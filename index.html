@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variable custum properties</title>
+    <style>
+        :root{
+            /* --box-color:violet;  */
+            --primary-color:white;
+            --danger-color:yellow;
+            --maxw:87.5rem;
+        }
+        .box{
+            /* --box-color:violet;  */
+            width:62.5rem;
+            height:43.75rem;
+            background-color: var(--primary-color);
+            border:2px solid var(--danger-color);
+            /* box-shadow: 3px 3px var(--primary-color); */
+            margin:0.125rem 0.5625rem;
+        }
+        .container{
+           /* --box-color:violet;  */
+           max-width:var(--maxw);
+           margin:auto;
+           background-color: var(--danger-color);
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: var(--box-color);  */
+        }
+        #first{
+            margin-top: 1.875rem;
+            
+            font-weight: bold;
+            font-size: 1.875rem;
+            /* display:flex;
+       flex-direction:column;
+       align-items: center;
+       justify-content: center; */
+       text-align: center;
+        }
+        #sec{
+            text-align: center;
+            margin-top: 1.875rem;
+
+        }
+        #third{
+            margin-top: 0.3125rem;
+            font-size: 4.375rem;
+        }
+        #four{
+            margin-top: 3.75rem;
+            font-size: 1.5625rem;    
+            text-align: center;
+        }
+        #five{
+            /* border:1px solid rgb(200, 215, 221); */
+            background-color: rgb(245, 248, 248);
+            margin-top: 3.125rem;
+        }
+        #six{
+            margin-top: 0.625rem;
+            font-size: 1.25rem;    
+            text-align: center;
+        }
+        #seven{
+            /* margin-bottom: 0rem; */
+            font-size: 1.25rem;    
+            text-align: center;
+        }
+     
+       @media only screen and (max-width:1000px){
+           .container{
+          
+               /* width:30%; */
+               flex-direction: column;
+               display: block;
+               display: flex;
+               justify-content: center;
+               text-align: center;
+           }
+           .box{
+              
+               flex-direction: column;
+               width:480px;
+               display: flex;
+               justify-content: center;
+               text-align: center;
+             
+           }
+           #six  {
+            margin-left: 80px;
+            width:60%;
+              display:flex;
+              justify-content: center;
+              align-items: center;
+               flex-direction: column;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+  <div class="box"> 
+      <div id="first"> Private limited <br/>company <div id="five"><div id="sec">Starting <br/>
+     <p id="third">$999</P>
+      <p id="four"style="color:blue" > + Govt Fees</p> 
+    </div>
+    </div>
+    <div id="six"> The default option for start-ups and growing businesses as only private limited companies can raise
+        venture capital. This type of campany offer limited liability for its shareholders with certain restrictions placed on the owwnership. Private limited company registration,direction ,directors may be different from shareholder. </div>
+        <div>   <p id="seven"style="color:blue" > Know More</p>  </div>
+
+    </div>
+</div>
+
+
+
+
+
+  <div class="box">
+    <div id="first"> Limited Liability<br/> Partnership <div id="five"><div id="sec">Starting <br/>
+        <p id="third">$999</P>
+         <p id="four"style="color:blue" > + Statutory Fees</p> 
+       </div>
+       </div>
+       <div id="six">LLP was introduced to provide a form of business that is easy to maintain and to help 
+           owners by providing them with limited liability. Limited liability Partnership Registration combines the benefits of a partnership with that of a limited  company. </div>
+           <div>   <p id="seven"style="color:blue" > Know More</p>  </div>
+       </div>
+  </div>
+  <div class="box">
+    <div id="first"> One Person<br/>  company  <div id="five"><div id="sec">Starting <br/>
+        <p id="third">$5999</P>
+         <p id="four"style="color:blue" >  *ALL Inclusive</p> 
+       </div>
+       </div>
+       <div id="six">  The best structure for solo entrepreneurs looking beyond the opportunities a sole proprietorship affords .Here , a single promoter gains full authority over the company ,restricting his/her liability towards their contribution to the enterprise. The said person wil be the sole shareholder and director  </div>
+       <div>   <p id="seven"style="color:blue" > Know More</p>  </div>
+       </div>
+  </div>
+  <div class="box">
+    <div id="first"> Partnership <br/> Firm <div id="five"><div id="sec">Starting <br/>
+        <p id="third">$5998</P>
+         <p id="four"style="color:blue" > +Statutory Fees</p> 
+       </div>
+       </div>
+       <div id="six"> A bussiness structure in which two or more individuals manage a businees per the term in Partnership deed. Its best suitable for home businesses that are unlikely to take any debt due to low cost. ease of setting up and minimal compaliance requirements. </div>
+       <div>   <p id="seven"style="color:blue" > Know More</p>  </div>
+       </div>
+  </div>
+
+
+    </div>
+</body>
+</html>
